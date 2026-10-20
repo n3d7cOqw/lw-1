@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Блоковий макет</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            padding: 15px;
+            background-color: #fff;
+        }
+
+        .layout-wrapper {
+            border: 2px solid #000;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        header {
+            background-color: #dbe4f0;
+            border: 1px solid #333;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 20px;
+        }
+
+        nav {
+            background-color: #8daed3;
+            border: 1px solid #333;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .content-row {
+            display: flex;
+            gap: 12px;
+        }
+
+        .sidebar-left {
+            flex: 1;
+            background-color: #dbe4f0;
+            border: 1px solid #333;
+            padding: 15px;
+        }
+
+        main {
+            flex: 3;
+            background-color: #dbe4f0;
+            border: 1px solid #333;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        article {
+            background-color: #9cd4db;
+            border: 1px solid #333;
+            padding: 15px;
+        }
+
+        .sidebar-right {
+            flex: 1;
+            background-color: #8daed3;
+            border: 1px solid #333;
+            padding: 15px;
+        }
+
+        footer {
+            background-color: #dbe4f0;
+            border: 1px solid #333;
+            padding: 15px;
+            text-align: center;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="layout-wrapper">
+
+    <header>
+        <h1>Назва сайту</h1>
+        <form action="/search" method="GET">
+            <input type="search" name="q" placeholder="Пошук...">
+            <button type="submit">Знайти</button>
+        </form>
+    </header>
+
+    <nav aria-label="Головне меню">
+        <ul>
+            <li><a href="#home">Головна</a></li>
+            <li><a href="#news">Новини</a></li>
+            <li><a href="#articles">Статті</a></li>
+            <li><a href="#contacts">Контакти</a></li>
+        </ul>
+    </nav>
+
+    <div class="content-row">
+        <aside class="sidebar-left">
+            <h3>Розділи</h3>
+            <ul>
+                <li>Технології</li>
+                <li>Програмування</li>
+                <li>Дизайн</li>
+            </ul>
+        </aside>
+
+        <main>
+            <h2>Стрічка публікацій</h2>
+
+            <article>
+                <h3>Головна новина</h3>
+                <p>Опис та анонс головної події...</p>
+            </article>
+
+            <article>
+                <h3>Стаття 1</h3>
+                <p>Короткий зміст першої статті...</p>
+            </article>
+
+            <article>
+                <h3>Стаття 2</h3>
+                <p>Короткий зміст другої статті...</p>
+            </article>
+        </main>
+
+        <aside class="sidebar-right">
+            <h3>Популярне</h3>
+            <ul>
+                <li>Тема 1</li>
+                <li>Тема 2</li>
+                <li>Тема 3</li>
+            </ul>
+        </aside>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Всі права захищені</p>
+    </footer>
+
+</div>
+
+</body>
+</html>

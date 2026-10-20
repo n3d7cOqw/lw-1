@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Laboratory Work 1</title>
+</head>
+<style>
+    .box{
+        margin: 30px 0;
+    }
+</style>
+<body>
+<div class="box">
+    <b>E=mc<sup>2</sup></b>, where <b>E</b> - energy of the object,<br>
+    <b>m</b> - it's mass, <b>c</b> - speed of light in<br>
+    vacuum, equals to 299 792 458 <i>m/s</i>
+</div>
+<div class="box">
+    <select>
+        <option value="" selected>Оберіть студента зі списку</option>
+        <option value="1">Буйлін Павло</option>
+        <option value="2">Доманський Максим</option>
+        <option value="3">Жорняк Олександр</option>
+        <option value="4">Ковган Богдан</option>
+    </select>
+</div>
+<div class="box">
+    <table>
+        <caption>Зміст</caption>
+        <thead>
+        <tr>
+            <th scope="col">Назва розділу</th>
+            <th scope="col">Сторінка</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Вступ та базові концепції</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>Розділ 1. Архітектура та принципи побудови</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>Розділ 2. Робота зі структурами даних</td>
+            <td>45</td>
+        </tr>
+        <tr>
+            <td>Розділ 3. Оптимізація та продуктивність</td>
+            <td>89</td>
+        </tr>
+        <tr>
+            <td>Розділ 4. Безпека та обробка помилок</td>
+            <td>134</td>
+        </tr>
+        <tr>
+            <td>Висновки та корисні ресурси</td>
+            <td>170</td>
+        </tr>
+        <tr>
+            <td>Предметний покажчик</td>
+            <td>182</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<div class="box">
+    <form action="#" method="POST">
+            <div>
+                <label for="fullName">ПІБ студента:</label><br>
+                <input type="text" id="fullName" required>
+
+            </div>
+
+            <div>
+                <label for="birthDate">Дата народження:</label><br>
+                <input type="date" id="birthDate" required>
+            </div>
+
+            <div>
+                <label for="email">Електронна пошта:</label><br>
+                <input type="email" id="email" required>
+            </div>
+
+
+
+
+            <div>
+                <label for="group">Група:</label><br>
+                <input type="text" id="group" required>
+            </div>
+
+            <div>
+                <label for="course">Курс:</label><br>
+                <select id="course" name="course" required>
+                    <option value="" disabled selected>Оберіть курс</option>
+                    <option value="1">1 курс</option>
+                    <option value="2">2 курс</option>
+                    <option value="3">3 курс</option>
+                    <option value="4">4 курс</option>
+                </select>
+            </div>
+
+            <p>
+                Форма навчання:<br>
+                <input type="radio" id="budget" name="studyForm" value="budget" checked>
+                <label for="budget">Бюджет</label><br>
+                <input type="radio" id="contract" name="studyForm" value="contract">
+                <label for="contract">Контракт</label>
+            </p>
+        <button type="submit">Відправити</button>
+    </form>
+    <div class="box">
+        <a href="https://knureigs.github.io/itech/lb/ITech1_HTML/index.html">Відносне гіперпосилання, що веде до необхідного розділу іншої сторінки цього ресурсу.</a>
+    </div>
+</div>
+</body>
+</html>
