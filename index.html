@@ -1,119 +1,129 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <title>Laboratory Work 1</title>
-    <style>
-        .box{
-            margin: 30px 0;
-        }
-    </style>
+    <title>Лабораторна робота 1</title>
 </head>
 <body>
-<div class="box">
-    <b>E=mc<sup>2</sup></b>, where <b>E</b> - energy of the object,<br>
-    <b>m</b> - it's mass, <b>c</b> - speed of light in<br>
-    vacuum, equals to 299 792 458 <i>m/s</i>
+
+<p>
+    Загальна кількість перестановок з <i>n</i> елементів дорівнює <b>добутку всіх цілих чисел</b> від <i>1</i> до <i>n</i>:<br>
+    P<sub>n</sub> = 1&bull;2&bull;3&bull;...&bull;(n-2)&bull;(n-1)&bull;n.
+</p>
+
+<dl>
+    <dt>Програмування інтернет-застосувань</dt>
+    <dd>Розробка клієнтської та серверної частини вебдодатків з використанням сучасних технологій.</dd>
+
+    <dt>Комп'ютерні мережі</dt>
+    <dd>Принципи побудови, маршрутизація, адресація та протоколи передачі даних у мережах.</dd>
+
+    <dt>Організація баз даних та знань</dt>
+    <dd>Проєктування реляційних баз даних, нормалізація та написання SQL-запитів.</dd>
+
+    <dt>Операційні системи</dt>
+    <dd>Архітектура ОС, керування процесами, пам'яттю та файловими системами.</dd>
+
+    <dt>Веб розробка</dt>
+    <dd>Створння сайтів, написання скриптів, робота з git</dd>
+</dl>
+
+<table border="1" cellpadding="5" cellspacing="0">
+    <thead>
+    <tr>
+        <th>Період</th>
+        <th>I</th>
+        <th>II</th>
+        <th>III</th>
+        <th>IV</th>
+        <th>V</th>
+        <th>VI</th>
+        <th>VII</th>
+        <th>VIII</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <th>1</th>
+        <td>1 <b>H</b><br>Гідроген</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>2 <b>He</b><br>Гелій</td>
+    </tr>
+    <tr>
+        <th>2</th>
+        <td>3 <b>Li</b><br>Літій</td>
+        <td>4 <b>Be</b><br>Берилій</td>
+        <td>5 <b>B</b><br>Бор</td>
+        <td>6 <b>C</b><br>Карбон</td>
+        <td>7 <b>N</b><br>Нітроген</td>
+        <td>8 <b>O</b><br>Оксиген</td>
+        <td>9 <b>F</b><br>Флуор</td>
+        <td>10 <b>Ne</b><br>Неон</td>
+    </tr>
+    </tbody>
+</table>
+
+<form action="#" method="post">
+
+        <p>
+            <label for="component-type">Тип комплектуючої:</label>
+            <select id="component-type" name="component_type">
+                <option value="cpu">Процесор (CPU)</option>
+                <option value="gpu">Відеокарта (GPU)</option>
+                <option value="ram">Оперативна пам'ять (RAM)</option>
+                <option value="mb">Материнська плата</option>
+                <option value="ssd">Накопичувач (SSD/HDD)</option>
+                <option value="psu">Блок живлення (PSU)</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="manufacturer">Виробник:</label>
+            <input type="text" id="manufacturer" name="manufacturer" required>
+        </p>
+
+        <p>
+            <label for="model">Модель:</label>
+            <input type="text" id="model" name="model" required>
+        </p>
+
+        <p>
+            <label for="specs">Основні характеристики:</label><br>
+            <textarea id="specs" name="specs" rows="4" cols="40"></textarea>
+        </p>
+
+        <p>
+            <label for="price">Ціна (грн):</label>
+            <input type="number" id="price" name="price" min="0" step="0.01">
+        </p>
+
+        <p>
+            Стан:
+            <input type="radio" id="state-new" name="state" value="new" checked>
+            <label for="state-new">Новий</label>
+            <input type="radio" id="state-used" name="state" value="used">
+            <label for="state-used">Б/В</label>
+        </p>
+
+        <p>
+            <button type="submit">Зберегти</button>
+            <button type="reset">Очистити</button>
+        </p>
+</form>
+
+<div>
+    <img src="img/123.jpg" alt="Навігація ХНУРЕ" usemap="#nure-map" width="600" height="200">
+    <map name="nure-map">
+        <area shape="rect" coords="0,0,200,200" href="https://nure.ua/" alt="Сайт університету" target="_blank">
+        <area shape="rect" coords="201,0,400,200" href="https://nure.ua/department/" alt="Сайт кафедри" target="_blank">
+        <area shape="rect" coords="401,0,600,200" href="https://cist.nure.ua/ias/app/tt/f?p=778:2:3991201199210994::NO" alt="Розклад занять" target="_blank">
+    </map>
 </div>
-<div class="box">
-    <select>
-        <option value="" selected>Оберіть студента зі списку</option>
-        <option value="1">Буйлін Павло</option>
-        <option value="2">Доманський Максим</option>
-        <option value="3">Жорняк Олександр</option>
-        <option value="4">Ковган Богдан</option>
-    </select>
-</div>
-<div class="box">
-    <table>
-        <caption>Зміст</caption>
-        <thead>
-        <tr>
-            <th scope="col">Назва розділу</th>
-            <th scope="col">Сторінка</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <td>Вступ та базові концепції</td>
-            <td>5</td>
-        </tr>
-        <tr>
-            <td>Розділ 1. Архітектура та принципи побудови</td>
-            <td>18</td>
-        </tr>
-        <tr>
-            <td>Розділ 2. Робота зі структурами даних</td>
-            <td>45</td>
-        </tr>
-        <tr>
-            <td>Розділ 3. Оптимізація та продуктивність</td>
-            <td>89</td>
-        </tr>
-        <tr>
-            <td>Розділ 4. Безпека та обробка помилок</td>
-            <td>134</td>
-        </tr>
-        <tr>
-            <td>Висновки та корисні ресурси</td>
-            <td>170</td>
-        </tr>
-        <tr>
-            <td>Предметний покажчик</td>
-            <td>182</td>
-        </tr>
-        </tbody>
-    </table>
-</div>
-<div class="box">
-    <form action="#" method="POST">
-            <div>
-                <label for="fullName">ПІБ студента:</label><br>
-                <input type="text" id="fullName" required>
 
-            </div>
-
-            <div>
-                <label for="birthDate">Дата народження:</label><br>
-                <input type="date" id="birthDate" required>
-            </div>
-
-            <div>
-                <label for="email">Електронна пошта:</label><br>
-                <input type="email" id="email" required>
-            </div>
-
-
-
-
-            <div>
-                <label for="group">Група:</label><br>
-                <input type="text" id="group" required>
-            </div>
-
-            <div>
-                <label for="course">Курс:</label><br>
-                <select id="course" name="course" required>
-                    <option value="" disabled selected>Оберіть курс</option>
-                    <option value="1">1 курс</option>
-                    <option value="2">2 курс</option>
-                    <option value="3">3 курс</option>
-                    <option value="4">4 курс</option>
-                </select>
-            </div>
-
-            <p>
-                Форма навчання:<br>
-                <input type="radio" id="budget" name="studyForm" value="budget" checked>
-                <label for="budget">Бюджет</label><br>
-                <input type="radio" id="contract" name="studyForm" value="contract">
-                <label for="contract">Контракт</label>
-            </p>
-        <button type="submit">Відправити</button>
-    </form>
-    <div class="box">
-        <a href="article.html">Відносне гіперпосилання, що веде до необхідного розділу іншої сторінки цього ресурсу.</a>
-    </div>
-</div>
 </body>
 </html>
