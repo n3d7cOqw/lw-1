@@ -28,7 +28,7 @@
     <dd>Створння сайтів, написання скриптів, робота з git</dd>
 </dl>
 
-<table border="1" cellpadding="5" cellspacing="0">
+<table>
     <thead>
     <tr>
         <th>Період</th>
@@ -70,50 +70,50 @@
 
 <form action="#" method="post">
 
-        <p>
-            <label for="component-type">Тип комплектуючої:</label>
-            <select id="component-type" name="component_type">
-                <option value="cpu">Процесор (CPU)</option>
-                <option value="gpu">Відеокарта (GPU)</option>
-                <option value="ram">Оперативна пам'ять (RAM)</option>
-                <option value="mb">Материнська плата</option>
-                <option value="ssd">Накопичувач (SSD/HDD)</option>
-                <option value="psu">Блок живлення (PSU)</option>
-            </select>
-        </p>
+    <p>
+        <label for="component-type">Тип комплектуючої:</label>
+        <select id="component-type" name="component_type">
+            <option value="cpu">Процесор (CPU)</option>
+            <option value="gpu">Відеокарта (GPU)</option>
+            <option value="ram">Оперативна пам'ять (RAM)</option>
+            <option value="mb">Материнська плата</option>
+            <option value="ssd">Накопичувач (SSD/HDD)</option>
+            <option value="psu">Блок живлення (PSU)</option>
+        </select>
+    </p>
 
-        <p>
-            <label for="manufacturer">Виробник:</label>
-            <input type="text" id="manufacturer" name="manufacturer" required>
-        </p>
+    <p>
+        <label for="manufacturer">Виробник:</label>
+        <input type="text" id="manufacturer" name="manufacturer" required>
+    </p>
 
-        <p>
-            <label for="model">Модель:</label>
-            <input type="text" id="model" name="model" required>
-        </p>
+    <p>
+        <label for="model">Модель:</label>
+        <input type="text" id="model" name="model" required>
+    </p>
 
-        <p>
-            <label for="specs">Основні характеристики:</label><br>
-            <textarea id="specs" name="specs" rows="4" cols="40"></textarea>
-        </p>
+    <p>
+        <label for="specs">Основні характеристики:</label><br>
+        <textarea id="specs" name="specs" rows="4" cols="40"></textarea>
+    </p>
 
-        <p>
-            <label for="price">Ціна (грн):</label>
-            <input type="number" id="price" name="price" min="0" step="0.01">
-        </p>
+    <p>
+        <label for="price">Ціна (грн):</label>
+        <input type="number" id="price" name="price" min="0" step="0.01">
+    </p>
 
-        <p>
-            Стан:
-            <input type="radio" id="state-new" name="state" value="new" checked>
-            <label for="state-new">Новий</label>
-            <input type="radio" id="state-used" name="state" value="used">
-            <label for="state-used">Б/В</label>
-        </p>
+    <p>
+        Стан:
+        <input type="radio" id="state-new" name="state" value="new" checked>
+        <label for="state-new">Новий</label>
+        <input type="radio" id="state-used" name="state" value="used">
+        <label for="state-used">Б/В</label>
+    </p>
 
-        <p>
-            <button type="submit">Зберегти</button>
-            <button type="reset">Очистити</button>
-        </p>
+    <p>
+        <button type="submit">Зберегти</button>
+        <button type="reset">Очистити</button>
+    </p>
 </form>
 
 <div>
